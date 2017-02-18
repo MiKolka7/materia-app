@@ -129,7 +129,7 @@ gulp.task('clean', function() {
 gulp.task('sprite', function () {
     var spriteData = gulp.src('images/sprite/*').pipe(
         spritesmith({
-            imgName: 'sprite.png',
+            imgName: '../images/sprite.png',
             cssName: '_icon-mixin.scss',
             // retinaImgName: 'sprite@2x.png',
             // retinaSrcFilter: ['images/sprite/*@2x.png'],
