@@ -1,0 +1,20 @@
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: hidden;
+}
+html,
+body {
+	font-family: Roboto, Verdana; /*почему-то не работает Roboto*/
+}
+img {
+	width: 100%;
+}
+
+$width-app: 640px; /*переменная для ширины сайта*/
+
+@mixin wh-margin {
+	margin-left: (25px/$width-app)*100%;
+	margin-right: (25px/$width-app)*100%;
+}

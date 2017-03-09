@@ -1,0 +1,52 @@
+@mixin box-img {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+
+.ad2-catalog {
+	background: #e8ecf0;
+	text-align: center;
+	padding-top: 165px;
+	padding-bottom: 155px;
+}
+
+	/*$width-app: 640px; - задано в _base.scss*/
+	.ad2-catalog__season__summer {
+		float: left;
+		@include box-img;
+		width: (($width-app - 25px*3)/2)/$width-app*100%;
+		margin-left: (25px/$width-app)*100%;
+	}
+
+	.ad2-catalog__season__winter {
+		float: left;
+		@include box-img;
+		width: (($width-app - 25px*3)/2)/$width-app*100%;
+		@include wh-margin;
+	}
+
+	.ad2-catalog__premium {
+		@include box-img;
+		background: #f8f8f8;
+		margin-top: 34px;
+		@include wh-margin;
+	}
+
+		.ad2-catalog a {
+			color: #323c3f;
+			font-family: Roboto, verdana;
+			font-size: 19px;
+			font-weight: 500;
+			line-height: 42px;
+		}
+
+		.ad2-catalog__season__summer a:last-child,
+		.ad2-catalog__season__winter a:last-child,
+		.ad2-catalog__premium a:last-child {
+			display: block;
+			background: #FFF;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			width: 100%;
+			padding: 25px 0;
+		}

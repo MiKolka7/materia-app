@@ -1,0 +1,55 @@
+@mixin bg-position {
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ad2-sales__sale {
+	/*background: linear-gradient(top, #fff 0%, #999 100%);*/
+	/*почему не работает градиент?*/
+	background: url(../images/pic/img-1-2.png);
+	@include bg-position;
+	font-family: "Noto Sans", verdana; /*не подключаются шрифты*/
+	font-weight: bold;
+	line-height: 36px;
+}
+
+	.ad2-sales__sale a:first-child {
+		padding-top: 80px;
+		margin-left: 50px;
+		color: #13164c;
+		font-size: 28px;
+	}
+
+	.ad2-sales__sale a:last-child {
+		margin-left: 50px;
+		padding-bottom: 160px;
+		color: #a4a5b7;
+		font-size: 22px;
+	}
+
+.ad2-sales__ultimate {
+	background: url(../images/pic/2-layers-2.png);
+	@include bg-position;
+	font-family: "Noto Sans", verdana;
+	font-weight: 700;
+	line-height: 42px;
+	color: #fff;
+}
+
+	.ad2-sales__ultimate a:first-child {
+		padding-top: 195px;
+		text-align: center;
+		font-size: 33px;
+	}
+
+	.ad2-sales__ultimate a:last-child {
+		padding-bottom: 20px;
+		text-align: center;
+		font-size: 24px;
+	}
+
+
+	.ad2-sales a {
+		display: block;
+	}
